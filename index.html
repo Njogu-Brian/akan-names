@@ -25,9 +25,7 @@
             </p>
             <p>In this application you are requires to fill in your Date of birth and Gender and the application will respond with your Akan name
             </p>
-            <p>Below is the form your required to fill
-                
-            </p>
+            <p>PLEASE ENTER YOUR BIRTHDAY AND GENDER HERE</p>
             
         </section>
 
@@ -38,15 +36,13 @@
                     <input type="date" id="birthday" name="birthday">
                     
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Male</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">Female</label>
-                  </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <select class="custom-select">
+                    <option selected>Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+             
+                <button type="submit" class="btn btn-primary">Get Akan Name</button>
             </form>
 
         </section>
