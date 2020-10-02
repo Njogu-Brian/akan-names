@@ -8,7 +8,7 @@ This is a simple web application that checks your gender and birthday and simply
 JS fiddle or JavaScript Console
 
 ## Setup/Installation Requirements
-* Clone this repository to a location in your file    system. git clone https://github.com/Njogu-brian/Akan.git
+* Clone this repository to a location in your file    system. git clone https://github.com/Njogu-brian/Akan-names.git
 * Open terminal command line then navigate to the root folder of the application. cd 
 * Open index.html on your Browser.
 ## Known Bugs
