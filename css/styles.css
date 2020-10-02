@@ -9,3 +9,11 @@ body{
     width: 200px;
     height: auto;
 }
+.male {
+    width: 500px;
+    height: auto;
+}
+.jumbotron {
+    text-align: center;
+    
+}
