@@ -18,20 +18,20 @@ function getAkanName (){
                 <p class="text-sm">Kindly fill in the options to learn your Akan name</p>
             </div>
             ;
-        }
+    }
 
-        if (DateofBirth != '' gender !='' {
+    if (DateofBirth != '' gender !='' {
 
-            let d = new Date(DateofBirth);
-            let day = d.getDay();
-            let month = d.getMonth();
-            let year = d.getFullYear().toString();
-            let CC = year.substring(o, 2);
+        let d = new Date(DateofBirth);
+        let day = d.getDay();
+        let month = d.getMonth();
+        let year = d.getFullYear().toString();
+        let CC = year.substring(o, 2);
 
-            dw = ((((CC / 4) - 2) * (CC - 1)) + ((5 * year) / 4) + ((26 * (month + 1) / 10)) +
-                        day) % 7;
+        dw = ((((CC / 4) - 2) * (CC - 1)) + ((5 * year) / 4) + ((26 * (month + 1) / 10)) +
+        day) % 7;
             
-            let day_of_week = Math.trunc(dw);
+        let day_of_week = Math.trunc(dw);
 
             let male_names = [
                 "Kwasi",
@@ -59,7 +59,20 @@ function getAkanName (){
                 akan_name = female_names[day];
             }
 
-            
+            document.getElementById("akan-name").innerHTML = `
+                    <div class="alert alert-success" role="alert">
+                        <p class="text-sm">Your Akan Name is <u><b>${akan_name}</b></u></p>
+                    </div> 
+                `;
+                } else {
+                    document.getElementById("akan-name").innerHTML = `
+                    <div class="alert alert-danger" role="alert">
+                        <p class="text-sm">Select options to learn your Akan name</p>
+                    </div> 
+                `;
+                }
+            };
+        })();
         }
    
 }
