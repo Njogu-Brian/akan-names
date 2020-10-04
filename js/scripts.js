@@ -41,7 +41,25 @@ function getAkanName (){
                 "Yaw",
                 "Kofi",
                 "Kwame"
-                        ];
+            ];
+            let female_names = [
+                "Akosua",
+                "Adwoa",
+                "Abenaa",
+                "Akua",
+                "Yaa",
+                "Afua",
+                "Ama"
+            ];
+
+            let akan_name = "";
+            if (gender == "male") {
+                akan_name = male_names[day];
+            } else {
+                akan_name = female_names[day];
+            }
+
+            
         }
    
 }
