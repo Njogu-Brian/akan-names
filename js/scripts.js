@@ -31,6 +31,17 @@ function getAkanName (){
             dw = ((((CC / 4) - 2) * (CC - 1)) + ((5 * year) / 4) + ((26 * (month + 1) / 10)) +
                         day) % 7;
             
+            let day_of_week = Math.trunc(dw);
+
+            let male_names = [
+                "Kwasi",
+                "Kwadwo",
+                "Kwabena",
+                "Kwahu",
+                "Yaw",
+                "Kofi",
+                "Kwame"
+                        ];
         }
    
 }
