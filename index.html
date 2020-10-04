@@ -77,13 +77,22 @@
                 <div class="form-group">
                     <label for="DateOfBirth">Date of Birth:</label>
                     <input type="date" id="birthday" name="birthday">
+
+                    <label class="control-label d-block" for="gender">Select your Gender</label>
+
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="male" value="male"
+                                name="gender">
+                            <label class="custom-control-label" for="male">Male</label>
+                        </div>
+
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="female" value="female"
+                                name="gender">
+                            <label class="custom-control-label" for="female">Female</label>
                     
                 </div>
-                <select class="custom-select">
-                    <option selected>Gender</option>
-                    <option value="1">Male</option>
-                    <option value="2">Female</option>
-                  </select>
+                
              
                 <button type="submit" class="btn btn-primary">Get Akan Name</button>
             </form>
