@@ -14,9 +14,7 @@ function getAkanName (){
             gender = "female";
         }   else {
             document.getElementById("akan-name").innerHTMML = 
-            <div cladd ="alert alert-danger" role="alert">
-                <p class="text-sm">Kindly fill in the options to learn your Akan name</p>
-            </div>
+            
             ;
     }
 
@@ -60,16 +58,12 @@ function getAkanName (){
             }
 
         document.getElementById("akan-name").innerHTML = `
-            <div class="alert alert-success" role="alert">
-            <p class="text-sm">Your Akan Name is <u><b>${akan_name}</b></u></p>
-            </div> 
+            
             `;
 
         } else {
         document.getElementById("akan-name").innerHTML = `
-            <div class="alert alert-danger" role="alert">
-            <p class="text-sm">Select options to learn your Akan name</p>
-            </div> 
+            
                 `;
                 }
             };
