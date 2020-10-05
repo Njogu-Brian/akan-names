@@ -17,9 +17,11 @@ JS fiddle or JavaScript Console
     * INPUT: "User's Birthday Entered"
     * INPUT: "User's Gender Entered"
     * OUTPUT: "Displays user's Akan Name depending on the submitted date and gender"
+
 2.Displays an error message if date input left empty
     * INPUT: ""
     * OUTPUT: "Select options to learn your Akan name"
+    
 3.Displays an error message if gender not chosen
     * INPUT: ""
     * OUTPUT: "Select options to learn your Akan name"
