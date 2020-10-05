@@ -19,12 +19,12 @@ JS fiddle or JavaScript Console
     * OUTPUT: "Displays user's Akan Name depending on the submitted date and gender"
 
 2.Displays an error message if date input left empty
-    * INPUT: ""
-    * OUTPUT: "Select options to learn your Akan name"
-    
+* INPUT: ""
+* OUTPUT: "Select options to learn your Akan name"
+
 3.Displays an error message if gender not chosen
-    * INPUT: ""
-    * OUTPUT: "Select options to learn your Akan name"
+* INPUT: ""
+* OUTPUT: "Select options to learn your Akan name"
 
 ## Known Bugs
 The website is still under development and may have some issues. Incase of any kindly contact me.
