@@ -73,9 +73,9 @@
             <p>PLEASE ENTER YOUR BIRTHDAY AND GENDER HERE</p>
             
 
-            <form>
+            <form method="post" class="akan_name" id="akan-form">
                 <div class="form-group">
-                    <label for="DateOfBirth">Date of Birth:</label>
+                    <label class="control-label" for="DateOfBirth">Date of Birth:</label>
                     <input type="date" id="birthday" name="birthday">
 
                     <label class="control-label d-block" for="gender">Select your Gender</label>
@@ -96,17 +96,6 @@
              
                 <button type="submit" class="btn btn-primary" id="submit">Get Akan Name</button>
             </form>
-            <div class ="alert alert-danger" role="alert">
-                <p class="text-sm">Kindly fill in the options to learn your Akan name</p>
-            </div>
-            <div class="alert alert-success" role="alert">
-                <p class="text-sm">Your Akan Name is <u><b>${akan_name}</b></u></p>
-                </div> 
-                <div class="alert alert-danger" role="alert">
-                    <p class="text-sm">Select options to learn your Akan name</p>
-                    </div> 
-        </div>
-
         <script src="js/scripts.js"></script>
     </body>
 </html>
