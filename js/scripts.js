@@ -1,73 +1,60 @@
-function getAkanName (){
-    let date_input = document.getElementById("birthday")
-    let male = document.getElementById("male")
-    let female = docuemnt.getEleemntById("female")
+(function () {
+    let date_input = document.getElementById("date");
+    let male = document.getElementById("male");
+    let female = document.getElementById("female");
 
-    docuemnt.getElementById("submit").onclik = function () {
-        let gender, DateOfBirth;
+    document.getElementById("submit").onclick = function () {
+        let gender, bdate;
 
-        bdate =date_input.nodeValue;
+        bdate = date_input.value;
 
-        if (male.checked)   {
+        if (male.checked) {
             gender = "male";
-        }   else if (female.checked){
+        } else if (female.checked) {
             gender = "female";
-        }   else {
-            document.getElementById("akan-name").innerHTMML = 
-            
-            ;
-    }
+        } else {
+            document.getElementById("akan-name").innerHTML = `
+            <div class="alert alert-danger" role="alert">
+                <p class="text-sm">Select options to learn your Akan name</p>
+            </div> 
+        `;
+        }
 
-    if (DateofBirth != '' gender !='' {
+        if (bdate != '' && gender != '') {
 
-        let d = new Date(DateofBirth);
-        let day = d.getDay();
-        let month = d.getMonth();
-        let year = d.getFullYear().toString();
-        let CC = year.substring(o, 2);
 
-        dw = ((((CC / 4) - 2) * (CC - 1)) + ((5 * year) / 4) + ((26 * (month + 1) / 10)) +
-        day) % 7;
-            
-        let day_of_week = Math.trunc(dw);
+            let d = new Date(bdate);
+            let day = d.getDay();
+            let month = d.getMonth();
+            let year = d.getFullYear().toString();
+            let CC = year.substring(0, 2);
 
-        let male_names = [
-            "Kwasi",
-            "Kwadwo",
-            "Kwabena",
-            "Kwahu",
-            "Yaw",
-            "Kofi",
-            "Kwame"
-        ];
-        let female_names = [
-            "Akosua",
-            "Adwoa",
-            "Abenaa",
-            "Akua",
-            "Yaa",
-            "Afua",
-            "Ama"
-        ];
+            let dw = ((((CC / 4) - 2) * (CC - 1)) + ((5 * year) / 4) + ((26 * (month + 1) / 10)) +
+                day) % 7;
 
-        let akan_name = "";
+            let day_of_week = Math.trunc(dw);
+
+            let male_names = ["Kwasi","Kwadwo","Kwabena","Kwahu","Yaw","Kofi","Kwame"];
+            let female_names = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+
+            let akan_name = "";
             if (gender == "male") {
-            akan_name = male_names[day];
+                akan_name = male_names[day];
             } else {
-            akan_name = female_names[day];
+                akan_name = female_names[day];
             }
 
-        document.getElementById("akan-name").innerHTML = `
-            
-            `;
-
+            document.getElementById("akan-name").innerHTML = `
+            <div class="alert alert-success" role="alert">
+                <p class="text-sm">Your Akan Name is <u><b>${akan_name}</b></u></p>
+            </div> 
+        `;
         } else {
-        document.getElementById("akan-name").innerHTML = `
-            
-                `;
-                }
-            };
-        })();
+            document.getElementById("akan-name").innerHTML = `
+            <div class="alert alert-danger" role="alert">
+                <p class="text-sm">Select options to learn your Akan name</p>
+            </div> 
+        `;
         }
-   
-}
+    };
+})();
