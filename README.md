@@ -1,4 +1,4 @@
-# MY PORTFOLIO
+# AKAN NAMES
 A web aplication that calculates your Akan name from your birthday and gender
 By Brian Njogu
 ## Description
@@ -11,6 +11,19 @@ JS fiddle or JavaScript Console
 * Clone this repository to a location in your file    system. git clone https://github.com/Njogu-brian/Akan-names.git
 * Open terminal command line then navigate to the root folder of the application. cd 
 * Open index.html on your Browser.
+
+## Behavior Driven Development
+1. Displays form for entering Date and Gender
+    * INPUT: "User's Birthday Entered"
+    * INPUT: "User's Gender Entered"
+    * OUTPUT: "Displays user's Akan Name depending on the submitted date and gender"
+2.Displays an error message if date input left empty
+    * INPUT: ""
+    * OUTPUT: "Select options to learn your Akan name"
+3.Displays an error message if gender not chosen
+    * INPUT: ""
+    * OUTPUT: "Select options to learn your Akan name"
+
 ## Known Bugs
 The website is still under development and may have some issues. Incase of any kindly contact me.
 
